@@ -6,7 +6,6 @@
 <link rel="import" href="../iron-form-element-behavior/iron-form-element-behavior.html">
 <link rel="import" href="../iron-validatable-behavior/iron-validatable-behavior.html">
 <link rel="import" href="../paper-input/paper-input.html">
-<link rel="import" href="../moment-element/moment-import.html">
 <!--
 `titanium-date-input`
 
@@ -47,9 +46,11 @@
                 color: #B6B6B6;
             }
         </style>
-        <paper-input type="text" id="input" always-float-label placeholder="[[placeholder]]" label="[[label]]" error-message="[[errorMessage]]"
-            required="[[required]]" allowed-pattern="[0-9\/]" maxlength="10" value="{{value}}" disabled$="[[disabled]]" focused$="{{focused}}"
-            validator="[[validator]]" invalid="{{error}}" error$="[[error]]" date-pattern="[[datePattern]]">
+        <paper-input type="text" id="input" always-float-label placeholder="[[placeholder]]"
+            label="[[label]]" error-message="[[errorMessage]]" required="[[required]]"
+            allowed-pattern="[0-9\/]" maxlength="10" value="{{value}}" disabled$="[[disabled]]"
+            focused$="{{focused}}" validator="[[validator]]" invalid="{{error}}" error$="[[error]]"
+            date-pattern="[[datePattern]]">
             <slot name="prefix" slot="prefix"></slot>
             <slot name="suffix" slot="suffix"></slot>
         </paper-input>
